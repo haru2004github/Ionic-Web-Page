@@ -1,0 +1,104 @@
+ <!-- .slide-section -->
+
+    <div class="mx-auto max-w-6xl">
+        <!-- card -->
+         <div class="">
+     <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+         <div class="absolute bg-[#4d96db] opacity-[0.8] h-full w-full"></div>
+         <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-nhs.png" alt="">
+         <div class=""></div>
+         <div class="p-12 flex items-end  absolute h-full z-30">
+             <div class="">
+                 <img  class="w-20" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-nhs-light.png&w=96&q=75" alt="">
+                 <h1 class="text-white max-w-xl mt-8">
+                     Learn how one of the world's largest health care providers.    National Health service,choose ionic to boost worker     productivity and agility.
+                 </h1>
+                 <button class="bg-blue-400 mt-10 text-slate-100 px-3 py-2 rounded-full  ">See all of your case studies
+                 <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                 </button>
+             </div>
+         </div>
+     </div>
+         </div>
+
+      <!-- card -->
+         <div class="">
+     <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+         <div class="absolute bg-[#78d16a] opacity-[0.8] h-full w-full"></div>
+         <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-hr-block.png" alt="">
+         <div class=""></div>
+         <div class="p-12 flex items-end  absolute h-full z-30">
+             <div class="">
+                 <img  class="w-14" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-hr-block-light.png&w=48&q=75" alt="">
+                 <h1 class="text-white max-w-xl mt-8">
+                    H&R Block delivers a cutting-edge mobile experience to customers,while acceleration developement timeline,reducing risk,and improving operational agilty.
+                 </h1>
+                 <button class="bg-green-400 mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
+                 <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                 </button>
+             </div>
+         </div>
+     </div>
+        </div>
+
+      <!-- card -->
+      <div class="">
+        <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+            <div class="absolute bg-[#2d459c] opacity-[0.8] h-full w-full"></div>
+            <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-southwest.png" alt="">
+            <div class=""></div>
+            <div class="p-12 flex items-end  absolute h-full z-30">
+                <div class="">
+                    <img  class="w-14" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-southwest-light.png&w=48&q=75" alt="">
+                    <h1 class="text-white max-w-xl mt-8">
+                       Southwest delivers a cutting-edge mobile experience ro riders while acceleration developement timelines,reducing risk,and improving operational agility.
+                    </h1>
+                    <button class="bg-violet-500 mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
+                    <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+           </div>
+
+       <!-- card -->
+       <div class="">
+        <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+            <div class="absolute bg-[#303030] opacity-[0.8] h-full w-full"></div>
+            <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-burger-king.png" alt="">
+            <div class=""></div>
+            <div class="p-12 flex items-end  absolute h-full z-30">
+                <div class="">
+                    <img  class="w-20" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-bobcat-light.png&w=48&q=75" alt="">
+                    <h1 class="text-white max-w-xl mt-8">
+                       H&R Block delivers a cutting-edge mobile experience to customers,while acceleration developement timeline,reducing risk,and improving operational agilty.
+                    </h1>
+                    <button class="bg-slate-600 mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
+                    <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+           </div>
+
+
+     <!-- card -->
+         <div class="">
+     <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+         <div class="absolute bg-[#e33a2a] opacity-[0.6] h-full w-full"></div>
+         <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-hr-block.png" alt="">
+         <div class=""></div>
+         <div class="p-12 flex items-end  absolute h-full z-30">
+             <div class="">
+                 <img  class="w-20" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-hr-block-light.png&w=48&q=75" alt="">
+                 <h1 class="text-white max-w-xl mt-8">
+                    H&R Block delivers a cutting-edge mobile experience to customers,while acceleration developement timeline,reducing risk,and improving operational agilty.
+                 </h1>
+                 <button class="bg-[#f85344] mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
+                 <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                 </button>
+             </div>
+         </div>
+     </div>
+        </div>
+    </div>
