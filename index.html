@@ -7,7 +7,8 @@
     <title>IONIC</title>
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./dist/output.css">
     <style>
         *{
             font-family: sans-serif;
@@ -34,7 +35,7 @@
 
         @keyframes slideIn {
             100%{
-               transform: translateX(0);
+               transform: translateX(-50%);
             }
         }
 
@@ -51,12 +52,17 @@
             width:3.5rem!important;
             margin-bottom: 3.5rem;
         }
+        .slideIn{
+            transform: translateX(0);
+            transition: 1s;
+            animation: slideIn 30s linear infinite;
+        }
         }
 
     </style>
 </head>
 <body class="">
-    <nav>
+    <nav class="">
         <div class="relative w-full h-[65px] hidden  z-20 bg-slate-500  mx-auto lg:flex justify-center items-center">
             <div class="absolute w-full ">
                 <img class="object-cover w-full h-[65px]" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/appflow-bg.png" alt="">
@@ -516,6 +522,13 @@
                                         </div>
                                     </div>
                                 </li>
+
+                                <li class="rounded-xl my-5 text-slate-600 lg:hover:bg-slate-100 px-3 py-1 duration-500 cursor-pointer text-md ">
+                                    <a href="./blog.html">Blog</a>
+                                </li>
+                                <li class="rounded-xl my-5 text-slate-600 lg:hover:bg-slate-100 px-3 py-1 duration-500 cursor-pointer text-md ">
+                                    <a href="./pricing.html">Pricing</a>
+                                </li>
                             </ul>
                             <div class="bg-slate-100 rounded-xl p-4 flex justify-between items-center lg:hidden">
                                 <div>Contact Sales</div>
@@ -543,7 +556,7 @@
     </div>
 
     <!-- Hero-section -->
-    <section class="px-5 md:px-0 max-w-6xl container mx-auto my-20">
+    <section class="px-5 md:px-0 max-w-6xl container mx-auto my-20 ">
         <div class="lg:grid grid-cols-12 flex flex-col-reverse">
             <!-- Left-content -->
             <div class="lg:col-span-5  col-span-12 mt-8 md:mt-0">
@@ -579,13 +592,13 @@
     </section>
 
     <!-- companies -->
-    <section class="px-5 md:px-0  overflow-hidden hidden">
+    <section class="px-5 md:px-0  overflow-hidden mb-20 md:mb-0 ">
         <div class="">
             <h1 class="text-center text-xl font-bold">
                 Powering mission-critical apps for the world’s best companies
             </h1>
             <div class="overflow-hidden lg:mx-32">
-                <ul class="flex mt-10  items-center  w-[2500px] justify-center gap-x-28 slideIn ">
+                <ul class="flex mt-10  items-center  w-[2500px] justify-center gap-x-10 md:gap-x-20 lg:gap-x-28 slideIn ">
                     <li>
                         <img class="h-5" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bbc.png" alt="">
                     </li>
@@ -643,7 +656,7 @@
     </section>
 
     <!-- Introduction react -->
-    <section class="px-5 md:px-0 container mx-auto max-w-2xl lg:max-w-6xl  md:py-28">
+    <section class="px-5 md:px-0 container mx-auto max-w-2xl lg:max-w-6xl  md:py-28 ">
         <div class=" shadow-xl rounded-3xl  bg-[#0038c9] flex flex-col-reverse md:grid md:grid-cols-2 ">
             <div class="flex items-center p-8 md:p-10 lg:p-20">
                 <div class="">
@@ -664,8 +677,8 @@
 
     <!-- Building incridible app -->
 
-    <section>
-        <div class="px-5 md:px-0 max-w-2xl lg:max-w-6xl container mx-auto py-28">
+    <section class="">
+        <div class="px-5 md:px-0 max-w-2xl lg:max-w-6xl container mx-auto py-28 ">
             <div class="">
                 <h1 class="text-3xl md:text-5xl text-slate-900 font-bold tet-center max-w-xl mx-auto">
                     Building incredible apps doesn’t need to be hard.
@@ -675,7 +688,7 @@
                 </h4>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-y-0 lg:gap-x-10 mt-14 ">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-y-0 lg:gap-x-10 mt-14  ">
 
                 <div class="shadow-lg hover:shadow-xl duration-300 p-5 rounded-xl">
                     <div class="">
@@ -713,7 +726,7 @@
             <!-- card -->
             <div class="grid md:grid-cols-2 shadow-lg mt-20 md:mt-32 lg:mt-56  rounded-3xl bg-slate-100  md:h-80">
                 <div class="flex justify-center items-center">
-                    <img class="md:h-80 md:scale-[1.5] translate-y-5" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/46d7c750-f4af-42f2-ab8e-984b69938405_ionic-io-homepage-ebook-0.png" alt="">
+                    <img class="md:h-80 scale-100 md:scale-[1.5] translate-y-5" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/46d7c750-f4af-42f2-ab8e-984b69938405_ionic-io-homepage-ebook-0.png" alt="">
                 </div>
                 <div class="flex justify-center items-center h-full">
                     <div class="p-8">
@@ -728,7 +741,7 @@
             </div>
 
             <!-- Phone -->
-            <div class="grid lg:grid-cols-2 mt-20 md:mt-48 items-center">
+            <div class="grid lg:grid-cols-2 mt-20 md:mt-48 items-center ">
                 <div class="">
                     <div class="max-w-2xl lg:max-w-md">
                         <h6 class="text-lg text-slate-500">CROSS-PLATFORM SDK</h6>
@@ -765,14 +778,14 @@
                     </div>
                 </div>
                 <!-- Image -->
-                <div class="grid grid-cols-2  items-center py-20 md:py-32 translate-x-10">
-                    <img class="w-full md:scale-125 z-10" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/5b7f5b7e-05fa-4d46-b560-85101ff06f1f_ionic-io-framework-custom-stocks-light.png" alt="">
-                    <img class="w-full md:scale-125 translate-y-20 -translate-x-20" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/4c10a0cb-0644-462d-ba21-a583e048bb21_ionic-io-framework-android-music-light.png" alt="">
+                <div class="grid grid-cols-2  items-center py-20 md:py-32 md:translate-x-10 ">
+                    <img class="ml-10 md:ml-0 w-full scale-125 z-10" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/5b7f5b7e-05fa-4d46-b560-85101ff06f1f_ionic-io-framework-custom-stocks-light.png" alt="">
+                    <img class="ml-10 md:ml-0 w-full scale-125 translate-y-20 -translate-x-20" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/4c10a0cb-0644-462d-ba21-a583e048bb21_ionic-io-framework-android-music-light.png" alt="">
                 </div>
             </div>
 
             <!-- Build, deploy, -->
-            <div class="max-w-6xl container mx-auto mt-20 md:mt-52">
+            <div class="max-w-6xl container mx-auto mt-20 md:mt-52 ">
                 <div class="">
                     <h1 class="text-slate-400">MOBILE CI/CD</h1>
 
@@ -795,7 +808,7 @@
                 </div>
 
                 <!-- Card -->
-                <div class="grid  lg:grid-cols-3 mt-20 gap-10">
+                <div class="grid  lg:grid-cols-3 mt-20 gap-10 ">
                     <div class="md:col-span-2  shadow-md hover:shadow-xl duration-500 bg-slate-00 rounded-3xl border overflow-hidden">
                         <div class="relative h-[400px]">
                                 <img class="absolute h-full " src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/83e073ba-bad9-4cc9-8240-42536a63989e_ionic-io-homepage-cloud-1.png" alt="">
@@ -872,7 +885,7 @@
 
                 <!-- Web-first dev -->
 
-                <div class="mt-56">
+                <div class="mt-56 hidden">
                     <h1 class="text-slate-400 text-lg text-center"> APP DEVELOPMENT</h1>
                     <h1 class="text-center mt-16 text-slate-900 text-4xl md:text-5xl max-w-3xl font-bold mx-auto">
                         Web-first dev tools for building stunning mobile experiences.
@@ -881,7 +894,7 @@
 
 
                 <!-- Card -->
-                <div class="grid md:grid-cols-2 gap-10 lg:gap-0 lg:grid-cols-3 gap-x-10 mt-20">
+                <div class="grid md:grid-cols-2  lg:grid-cols-3 gap-x-10 mt-20 gap-y-10 lg:gap-y-0 ">
                     <div class="rounded-3xl  shadow-md hover:shadow-xl duration-500 border border-slate-300 overflow-hidden card-hover">
                         <div class="  p-8 rounded-xl ">
                             <img class="w-10 md:w-16 mb-8 md:mb-16" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F8e664efd-fcfd-4040-a3aa-cb1f4a5da31e_ionic-io-index-app-dev-ionic-logo.png&w=64&q=75" alt="">
@@ -949,43 +962,200 @@
             <div class="p-6 border border-slate-300 rounded-2xl shadow-md hover:shadow-xl duration-500">
                 <img class="w-10 mb-8" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F9416584f-3b7c-40ab-a6bb-b2911608e1f3_ionic-io-homepage-open-source-cap-plugins.png&w=48&q=75" alt="">
     
-                <h1 class="font-bold text-xl md:text-2xl text-slate-600">Cap Plugin</h1>
+                <h1 class="font-bold text-lg md:text-2xl text-slate-600">Cap Plugin</h1>
             </div>
 
             <div class="p-6 border border-slate-300 rounded-2xl shadow-md hover:shadow-xl duration-500">
                 <img class="w-10 mb-8" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2Fa21a695a-f792-41f7-9194-6d1e11bd5940_ionic-io-homepage-v2-ionic-cli.png&w=48&q=75" alt="">
     
-                <h1 class="font-bold text-xl md:text-2xl text-slate-600">Ionic CLI</h1>
+                <h1 class="font-bold text-lg md:text-2xl text-slate-600">Ionic CLI</h1>
             </div>
 
             <div class="p-6 border border-slate-300 rounded-2xl shadow-md hover:shadow-xl duration-500">
                 <img class="w-10 mb-8" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F048d0772-326e-47c5-b7fe-70cef67b26a0_ionic-io-homepage-v2-ionicons.png&w=48&q=75" alt="">
     
-                <h1 class="font-bold text-xl md:text-2xl text-slate-600">Ionic Icons</h1>
+                <h1 class="font-bold text-lg md:text-2xl text-slate-600">Ionic Icons</h1>
             </div>
 
             <div class="p-6 border border-slate-300 rounded-2xl shadow-md hover:shadow-xl duration-500">
                 <img class="w-12 mb-8" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F7f50d803-132c-498d-8202-7b5cc9f76372_ionic-io-homepage-v2-stencil.png&w=64&q=75" alt="">
     
-                <h1 class="font-bold text-xl md:text-2xl text-slate-600">Stencil</h1>
+                <h1 class="font-bold text-lg md:text-2xl text-slate-600">Stencil</h1>
             </div>
 
             <div class="p-6 border border-slate-300 rounded-2xl shadow-md hover:shadow-xl duration-500">
                 <img class="w-10 mb-8" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F8b4b8655-f8d3-4ecb-afa5-76a475784dfc_ionic-io-homepage-v2-trapeze.png&w=48&q=75" alt="">
     
-                <h1 class="font-bold text-xl md:text-2xl text-slate-600">Trapeze</h1>
+                <h1 class="font-bold text-lg md:text-2xl text-slate-600">Trapeze</h1>
             </div>
 
             <div class="p-6 border border-slate-300 rounded-2xl shadow-md hover:shadow-xl duration-500">
                 <img class="w-10 mb-8" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F1ed412e4-b0d6-4916-8d2b-d5575a8c7579_ionic-io-homepage-v2-storage.png&w=48&q=75" alt="">
     
-                <h1 class="font-bold text-xl md:text-2xl text-slate-600">Storage</h1>
+                <h1 class="font-bold text-lg md:text-2xl text-slate-600">Storage</h1>
             </div>
         </div>
     </div>
 
+    <!-- Code-section -->
+    <section class=" bg-slate-800">
+        <div class="lg:max-w-6xl max-w-2xl px-5 md:px-0 mx-auto mt-20 py-40">
+            <div class="grid lg:grid-cols-2 justify-between">
+
+                <div class="">
+                    <h3 class="text-slate-300 text-sm mt-20">BUILT FOR DEVELOPERS</h3>
+                    <h1 class= "lg:text-5xl md:text-4xl text-3xl mt-5 text-slate-100">A developer-first platform. Built on open source</h1>
+                    <ul class="flex flex-col gap-y-2 mt-10 ">
+                        <li class="text-slate-200 flex items-center space-x-2 text-xl cursor-pointer ">
+                            <i class="fa-solid fa-check"></i>
+                            <span>World-class 
+                                <span class="border-b-2 border-slate-400 text-slate-100 hover:border-slate-200"> Documentation</span>
+                            </span>
+                        </li>
+                        <li class="text-slate-200 flex items-center space-x-2 text-xl cursor-pointer">
+                            <i class="fa-solid fa-check"></i>
+                            <span>100% open source
+                                <span class="border-b-2 border-slate-400 text-slate-100 hover:border-slate-200"> Mobile SDK</span>
+                                </span>
+                        </li>
+                        <li class="text-slate-200 flex items-center space-x-2 text-xl cursor-pointer">
+                            <i class="fa-solid fa-check"></i>
+                            <span>A
+                            <span class="border-b-2 border-slate-400 text-slate-100 hover:border-slate-200"> CLI </span>
+                            for building and testing
+                            </span>
+                        </li>
+                        <li class="text-slate-200 flex items-center space-x-2 text-xl cursor-pointer">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Cross-platform
+                                <span class="border-b-2 border-slate-400 text-slate-100 hover:border-slate-200"> native bridge</span>
+                                </span>
+                        </li>
+                        <li class="text-slate-200 flex items-center space-x-2 text-xl cursor-pointer">
+                            <i class="fa-solid fa-check"></i>
+                            <span>React, Angular, & Vue integrations
+                               
+                            </span>
+                        </li>
+                        <li class="text-slate-200 flex items-center space-x-2 text-lg cursor-pointer">
+                            <i class="fa-solid fa-check"></i>
+                            <span>World-wide developer
+                                <span class="border-b-2 border-slate-400 hover:border-slate-200">Community</span>
+                                </span>
+                        </li>
+                    </ul>
+                    <button class="bg-slate-100 rounded-full px-5 text-lg  py-3 text-slate-800 mt-14">Start Building
+                        <i class="fa-solid fa-arrow-right text-slate-800"></i>
+                    </button>
+                </div>
+
+                <div class="">
+                    <div class="flex justify-center">
+                        <div class="flex  lg:gap-x-3">
+                            <button class="bg-slate-100 rounded-full px-3 py-1 text-slate-800">
+                                <i class="fas fa-code"></i>
+                                Code
+                            </button>
+                            <button class=" rounded-full px-3 py-1 text-slate-100">
+                                <i class="fas fa-eye"></i>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl md:p-8 bg-slate-900  mt-10">
+                        <div class="grid  md:grid-cols-4 gap-x-5">
+                            <div class="">
+                                <div class="text-slate-200 hover:text-white cursor-pointer duration-150 font-bold bg-slate-800 p-3 rounded-xl text-center">
+                                    <div class="flex justify-center">
+                                        <img class="w-6" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2Fca59091b-acc5-4bbe-a49f-9b308bdc1d56_ionic-io-homepage-developers-4.png&w=32&q=75" alt="">
+                                    </div>
+                                    <h3 class="mt-3">React</h3>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="text-slate-200 hover:text-white cursor-pointer duration-150 font-bold bg-slate-800 p-3 rounded-xl text-center">
+                                    <div class="flex justify-center">
+                                        <img class="w-6" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F678871b0-ad17-4d70-81fe-abd41f3e658c_ionic-io-homepage-developers-5.png&w=32&q=75" alt="">
+                                    </div>
+                                    <h3 class="mt-3">Angular</h3>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="text-slate-200 hover:text-white cursor-pointer duration-150 font-bold bg-slate-800 p-3 rounded-xl text-center">
+                                    <div class="flex justify-center">
+                                        <img class="w-6" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F22c8a3e1-04d4-492f-97e1-4a23e2f67fba_ionic-io-homepage-developers-6.png&w=32&q=75" alt="">
+                                    </div>
+                                    <h3 class="mt-3">Vue</h3>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="text-slate-200 hover:text-white cursor-pointer duration-150 font-bold bg-slate-800 p-3 rounded-xl text-center">
+                                    <div class="flex justify-center">
+                                        <img class="w-6" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F6a865ba6-49b2-47f2-84be-b33b90a88be9_ionic-io-homepage-developers-7.png&w=32&q=75" alt="">
+                                    </div>
+                                    <h3 class="mt-3">Js</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <pre>
+                                <code class="text-slate-100">
+                                   
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class=" text-3xl lg:text-4xl font-bold text-slate-100 mt-32">Developer resources</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-y-8 lg:gap-y-0 md:gap-x-8 mt-8">
+
+                <div class="">
+                    <div class="p-8 bg-slate-700 rounded-2xl">
+                        <img class="w-10" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2Fa4e54d64-0315-4d54-8b72-4100fce4ebc5_ionic-io-homepage-developers-0.png&w=48&q=75" alt="">
+                        <h3 class="text-slate-200 text-xl mt-8 font-bold">Ionic Discord
+                            <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="p-8 bg-slate-700 rounded-2xl">
+                        <img class="w-10" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F35a33641-010c-401a-a413-49fc4e0bc602_ionic-io-homepage-developers-1.png&w=48&q=75" alt="">
+                        <h3 class="text-slate-200 text-xl mt-6 font-bold">Ionic Discord
+                            <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="p-8 bg-slate-700 rounded-2xl">
+                        <img class="w-10" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2F585efcf2-8a28-4fcc-bb76-3106fd43635e_ionic-io-homepage-developers-2.png&w=48&q=75" alt="">
+                        <h3 class="text-slate-200 text-xl mt-7 font-bold">Ionic Discord
+                            <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="p-8 bg-slate-700 rounded-2xl">
+                        <img class="w-10" src="https://ionic.io/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fionicframeworkcom%2Fd06098f7-609d-4f60-9c95-942a2043a85d_ionic-io-homepage-developers-3.png&w=32&q=75" alt="">
+                        <h3 class="text-slate-200 text-xl mt-6 font-bold">Ionic Discord
+                            <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
     <!-- Platform -->
-    <section class="px-5 md:px-0 max-w-6xl mx-auto py-52">
+    <section class="px-5 md:px-0 max-w-6xl mx-auto pt-52 pb-20 ">
 
         <div class="grid grid-cols-12  items-center lg:max-w-6xl md:max-w-2xl mx-auto">
             <div class="flex items-center col-span-12 lg:col-span-5">
@@ -1090,114 +1260,128 @@
     </section>
 
      <!-- .slide-section -->
+     <div class="px-5 md:px-0 mx-auto max-w-2xl lg:max-w-[1800px]">
 
-     <div class="px-5 md:px-0 mx-auto max-w-2xl lg:max-w-6xl">
-        <!-- card -->
-         <div class="">
-     <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
-         <div class="absolute bg-[#4d96db] opacity-[0.8] h-full w-full"></div>
-         <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-nhs.png" alt="">
-         <div class=""></div>
-         <div class="p-12 flex items-end  absolute h-full z-30">
-             <div class="">
-                 <img  class="w-20" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-nhs-light.png&w=96&q=75" alt="">
-                 <h1 class="text-white max-w-xl mt-8">
-                     Learn how one of the world's largest health care providers.    National Health service,choose ionic to boost worker     productivity and agility.
-                 </h1>
-                 <button class="bg-blue-400 mt-10 text-slate-100 px-3 py-2 rounded-full  ">See all of your case studies
-                 <i class="fa-solid fa-arrow-right text-slate-50"></i>
-                 </button>
-             </div>
-         </div>
-     </div>
-         </div>
-
-      <!-- card -->
-         <div class="">
-     <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
-         <div class="absolute bg-[#78d16a] opacity-[0.8] h-full w-full"></div>
-         <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-hr-block.png" alt="">
-         <div class=""></div>
-         <div class="p-12 flex items-end  absolute h-full z-30">
-             <div class="">
-                 <img  class="w-14" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-hr-block-light.png&w=48&q=75" alt="">
-                 <h1 class="text-white max-w-xl mt-8">
-                    H&R Block delivers a cutting-edge mobile experience to customers,while acceleration developement timeline,reducing risk,and improving operational agilty.
-                 </h1>
-                 <button class="bg-green-400 mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
-                 <i class="fa-solid fa-arrow-right text-slate-50"></i>
-                 </button>
-             </div>
-         </div>
-     </div>
-        </div>
-
-      <!-- card -->
-      <div class="">
-        <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
-            <div class="absolute bg-[#2d459c] opacity-[0.8] h-full w-full"></div>
-            <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-southwest.png" alt="">
-            <div class=""></div>
-            <div class="p-12 flex items-end  absolute h-full z-30">
-                <div class="">
-                    <img  class="w-14" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-southwest-light.png&w=48&q=75" alt="">
-                    <h1 class="text-white max-w-xl mt-8">
-                       Southwest delivers a cutting-edge mobile experience ro riders while acceleration developement timelines,reducing risk,and improving operational agility.
-                    </h1>
-                    <button class="bg-violet-500 mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
-                    <i class="fa-solid fa-arrow-right text-slate-50"></i>
-                    </button>
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+               <!-- card -->
+              <div class="">
+                <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+                  <div class="absolute bg-[#4d96db] opacity-[0.8] h-full w-full"></div>
+                   <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-nhs.png" alt="">
+                   <div class=""></div>
+                   <div class="p-8 lg:p-12 flex items-end  absolute h-full z-30">
+                    <div class="">
+                        <img  class="w-20" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-nhs-light.png&w=96&q=75" alt="">
+                        <h1 class="text-white max-w-xl mt-8">
+                            Learn how one of the world's largest health care providers.    National Health service,choose ionic to boost worker     productivity and agility.
+                        </h1>
+                        <button class="bg-blue-400 mt-10 text-slate-100 px-3 py-2 rounded-full  ">See all of your case studies
+                        <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                        </button>
+                    </div>
+                   </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-           </div>
-
-       <!-- card -->
-       <div class="">
-        <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
-            <div class="absolute bg-[#303030] opacity-[0.8] h-full w-full"></div>
-            <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-burger-king.png" alt="">
-            <div class=""></div>
-            <div class="p-12 flex items-end  absolute h-full z-30">
-                <div class="">
-                    <img  class="w-20" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-bobcat-light.png&w=48&q=75" alt="">
-                    <h1 class="text-white max-w-xl mt-8">
-                       H&R Block delivers a cutting-edge mobile experience to customers,while acceleration developement timeline,reducing risk,and improving operational agilty.
-                    </h1>
-                    <button class="bg-slate-600 mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
-                    <i class="fa-solid fa-arrow-right text-slate-50"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-           </div>
+              </div>
 
 
-     <!-- card -->
-         <div class="">
-     <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
-         <div class="absolute bg-[#e33a2a] opacity-[0.6] h-full w-full"></div>
-         <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-hr-block.png" alt="">
-         <div class=""></div>
-         <div class="p-12 flex items-end  absolute h-full z-30">
+              <div class="swiper-slide">
              <div class="">
-                 <img  class="w-20" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-hr-block-light.png&w=48&q=75" alt="">
-                 <h1 class="text-white max-w-xl mt-8">
-                    H&R Block delivers a cutting-edge mobile experience to customers,while acceleration developement timeline,reducing risk,and improving operational agilty.
-                 </h1>
-                 <button class="bg-[#f85344] mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
-                 <i class="fa-solid fa-arrow-right text-slate-50"></i>
-                 </button>
-             </div>
-         </div>
-     </div>
+            <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+                <div class="absolute bg-[#78d16a] opacity-[0.8] h-full w-full"></div>
+                <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-hr-block.png" alt="">
+                <div class=""></div>
+                <div class="p-8 lg:p-12 flex items-end  absolute h-full z-30">
+                    <div class="">
+                        <img  class="w-14" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-hr-block-light.png&w=48&q=75" alt="">
+                        <h1 class="text-white max-w-xl mt-8">
+                           H&R Block delivers a cutting-edge mobile experience to customers,while acceleration developement timeline,reducing risk,and improving operational agilty.
+                        </h1>
+                        <button class="bg-green-400 mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
+                        <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                        </button>
+                    </div>
+                </div>
+                </div>
+               </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="">
+                    <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+                        <div class="absolute bg-[#2d459c] opacity-[0.8] h-full w-full"></div>
+                        <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-southwest.png" alt="">
+                        <div class=""></div>
+                        <div class="p-8 lg:p-12 flex items-end  absolute h-full z-30">
+                            <div class="">
+                                <img  class="w-14" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-southwest-light.png&w=48&q=75" alt="">
+                                <h1 class="text-white max-w-xl mt-8">
+                                   Southwest delivers a cutting-edge mobile experience ro riders while acceleration developement timelines,reducing risk,and improving operational agility.
+                                </h1>
+                                <button class="bg-violet-500 mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
+                                <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="">
+                    <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+                        <div class="absolute bg-[#303030] opacity-[0.8] h-full w-full"></div>
+                        <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-burger-king.png" alt="">
+                        <div class=""></div>
+                        <div class="p-8 lg:p-12 flex items-end  absolute h-full z-30">
+                            <div class="">
+                                <img  class="w-20" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-bobcat-light.png&w=48&q=75" alt="">
+                                <h1 class="text-white max-w-xl mt-8">
+                                   H&R Block delivers a cutting-edge mobile experience to customers,while acceleration developement timeline,reducing risk,and improving operational agilty.
+                                </h1>
+                                <button class="bg-slate-600 mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
+                                <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="">
+                    <div class="relative h-[430px] z-10 bg-slate-50 overflow-hidden max-w-2xl rounded-3xl  ">
+                        <div class="absolute bg-[#e33a2a] opacity-[0.6] h-full w-full"></div>
+                        <img class="z-0 brightness-110 absolute" src="../dist/img/Ionic_ Enterprise App Development & Delivery Platform_files/bg-hr-block.png" alt="">
+                        <div class=""></div>
+                        <div class="p-8 lg:p-12 flex items-end  absolute h-full z-30">
+                            <div class="">
+                                <img  class="w-20" src="https://ionic.io/_next/image?url=%2Fimg%2Fcomponents%2Fcustomers-carousel%2Flogo-hr-block-light.png&w=48&q=75" alt="">
+                                <h1 class="text-white max-w-xl mt-8">
+                                   H&R Block delivers a cutting-edge mobile experience to customers,while acceleration developement timeline,reducing risk,and improving operational agilty.
+                                </h1>
+                                <button class="bg-[#f85344] mt-10 text-slate-100 px-3 py-2 rounded-full     ">See all of your case studies
+                                <i class="fa-solid fa-arrow-right text-slate-50"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                       </div>
+              </div>
+              ...
+            </div>
         </div>
     </div>
 
    
 
     <!-- footer -->
-   <section class="px-5 md:px-0 py-10">
+   <section class="px-5 md:px-0 py-10 ">
     <div class="max-w-2xl lg:max-w-6xl mx-auto bg-slate-900 py-10 md:py-28 rounded-3xl shadow-lg mt-32">
         <div class="max-w-2xl  mx-auto p-5">
             <h1 class="text-slate-100 text-2xl md:text-4xl lg:text-5xl font-bold text-center">
@@ -1284,7 +1468,7 @@
         <div class="border border-slate-300 mt-28 mb-10"></div>
 
         <div class="flex flex-col md:flex-row justify-center md:justify-between">
-            <div class="flex gap-x-4">
+            <div class="flex gap-x-4 justify-center md:justify-start">
                 <h1 class="text-slate-400">Copyright © 2022 Ionic</h1>
                 <a href="" class="text-slate-400 hover:text-slate-500">
                     Terms 
@@ -1303,8 +1487,37 @@
 
    </section> 
 
-
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="./cus.js"></script>
 </body>
+<script >
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          390: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+</script>
 </html>
 
